@@ -44,7 +44,7 @@ total_steps <- aggregate(steps~date, data = dat2, sum)
 hist(total_steps$steps, breaks = 12, main = "Number of total steps each day", xlab = "Total steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](figure/unnamed-chunk-3-1.png)<!-- -->
 
 The mean total number of steps each day is:
 
@@ -99,7 +99,7 @@ The pattern can be shown as:
 plot(average_steps$interval, average_steps$steps, type = "l", main = "Number of average steps for each interval", xlab = "Interval", ylab = "Average steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](figure/unnamed-chunk-8-1.png)<!-- -->
 
 From this we can clearly see the spike between 500 and 1000.
 
@@ -144,7 +144,7 @@ total_steps.x <- aggregate(steps.x~date, data = dat3, sum)
 hist(total_steps$steps, breaks = 12, main = "Number of total steps each day", xlab = "Total steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](figure/unnamed-chunk-11-1.png)<!-- -->
 
 The mean total number of steps each day is:
 
@@ -196,7 +196,7 @@ library(lattice)
 with(average_steps, xyplot(steps ~ interval | day, type = "l", layout = c(1, 2)))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+![](figure/unnamed-chunk-15-1.png)<!-- -->
 
 
 
